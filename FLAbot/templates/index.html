@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Dialogue System For Visually Impaired People</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Educational Dialogue System For Visually Impaired People</h1>
+    <div class="container">
+        <input type="file" id="fileInput" accept="image/*">
+        <button id="uploadBtn" onclick="processImage()">Upload and Process FSA Image</button>
+        <div id="chat"></div>
+        <input type="text" id="question" placeholder="Press Tab to type a question or S to use voice..." aria-label="Question input">
+        <div class="button-container">
+            <button id="askBtn" onclick="askQuestion(false)">Ask</button>
+            <button id="micBtn" onclick="askQuestion(true)">🎤 Use Voice</button>
+        </div>
+        <div class="key-instruction">Press 'Tab' to type a question or 'S' to use voice</div>
+        <div id="error"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
