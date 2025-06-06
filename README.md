@@ -1,52 +1,41 @@
-# 🎙️ Voice-Enabled FSA Bot
+# Voice-Enabled FSA Bot
 
-An **educational chatbot** designed to help **visually impaired users** understand **Finite State Automata (FSA)** diagrams. This tool uses **image processing**, **OCR**, and **natural interaction (text and voice)** to explain graphical structures found in automata theory.
-
----
-
-## 🧠 Project Overview
-
-This bot allows users to upload an image of a finite state automaton (FSA). Using **OpenCV** and **Tesseract OCR**, the system extracts relevant state and transition information. Users can then ask questions about the uploaded FSA via:
-
-- 🧾 **Text input**
-- 🎤 **Voice input (speech-to-text)**
-
-The bot responds using both:
-
-- 📄 **Text output**
-- 🔊 **Text-to-speech voice output**
+An educational chatbot designed to assist visually impaired individuals in understanding Finite State Automata (FSA) using voice and text interaction.
 
 ---
 
-## ⚙️ Technologies Used
-
-### 🖥️ Frontend
-- **HTML**
-- **CSS**
-- **JavaScript**
-
-### 🧪 Backend
-- **Python**
-- **Flask**
-
-### 🧠 Core Python Modules
-- `OpenCV` – For image pre-processing.
-- `pytesseract` – To extract text and labels from the FSA image.
-- `speech_recognition` – For converting voice input to text.
-- `pyttsx3` – For converting bot responses to speech.
+## ✨ Features
+- 📷 Image upload of FSAs (Finite State Automata)
+- 🔍 Image processing using OpenCV and Tesseract OCR
+- 🧠 Rule-based chatbot for answering FSA-related queries
+- 🎤 Voice input using the `speech_recognition` module
+- 🗣️ Voice + text output using `pyttsx3` (text-to-speech)
+- 🌐 Simple and accessible web interface (HTML, CSS, JavaScript)
+- 🔁 Backend built with Flask and Python
 
 ---
 
-## 🚀 Features
+## ⚙️ How It Works
+1. The user uploads an image of a Finite State Automaton (hand-drawn or computer-generated).
+2. The image is processed using **OpenCV** and **Tesseract OCR** to extract text and graphical structures.
+3. Based on this information, the chatbot constructs a data model of the FSA.
+4. The user can then ask queries like:
+   - “What are the states/transitions in the fsa?”
+   - “What is the initial/final state?”
+   - “Input symbol from state A to B?”
+5. User can also ask for general information about finite state automata.
+5. Queries can be typed or spoken using the voice button.
+6. The bot responds in both text and voice form for accessibility.
 
-- 🖼️ Upload FSA image and extract structure using OCR.
-- 💬 Ask questions like:
-  - "What is the initial state?"
-  - "What are the transitions from q0?"
-  - "What are the final states?"
-- 🎤 Speak queries using your microphone.
-- 🔊 Hear responses from the bot.
-- 🎯 Designed for accessibility and educational use.
+---
 
+## 🧰 Requirements
+- Python 3.10+
+- Flask
+- OpenCV (`cv2`)
+- pytesseract
+- pyttsx3
+- speech_recognition
+- Other optional dependencies: `pyaudio` (for microphone input)
 
 
