@@ -42,8 +42,9 @@ pip install opencv-python pytesseract flask pyttsx3 speechrecognition pyaudio
 
 ## ▶️ How to Run
 
-bash
+```bash
 python app.py
+```
 
 Then open your browser and go to:
 http://127.0.0.1:5000/
