@@ -68,5 +68,5 @@ To stop the app, press Ctrl + C in the terminal.
 
 ## 👥 Co-creators
 - [Anna Irene Ditto](https://github.com/anna-irene)  
-- [Anna Keerthana V](https://github.com/anna-keerthana-v/)
-- [Cristal James Tomy](https://github.com/cristal-james-tomy/)
+- [Anna Keerthana V](https://github.com/annakv04/)
+- [Cristal James Tomy](https://github.com/CristalJamesTomy/)
